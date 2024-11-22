@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Komunitas Teknologi</title>
+    <link rel="stylesheet" href="">
+    <script src="script.js"></script>
+</head>
+<body>
+    <!-- Header with Sticky Navbar -->
+    <header>
+        <div class="navbar">
+            <h1>Web Komunitas Teknologi</h1>
+           <!-- Login and Sign-Up Forms -->
+    <!-- Login Form -->
+    <section id="loginForm" class="authForm" style="display: none;">
+        <h2>Login</h2>
+        <form id="login">
+            <label for="loginEmail">Email:</label>
+            <input type="email" id="loginEmail" required><br>
+            <label for="loginPassword">Password:</label>
+            <input type="password" id="loginPassword" required><br>
+            <button type="submit">Login</button>
+        </form>
+        <button onclick="closeLoginForm()">Cancel</button>
+    </section>
+
+    <!-- Sign-Up Form -->
+    <section id="signUpForm" class="authForm" style="display: none;">
+        <h2>Sign Up</h2>
+        <form id="signUp">
+            <label for="signUpName">Name:</label>
+            <input type="text" id="signUpName" required><br>
+            <label for="signUpEmail">Email:</label>
+            <input type="email" id="signUpEmail" required><br>
+            <label for="signUpPassword">Password:</label>
+            <input type="password" id="signUpPassword" required><br>
+            <button type="submit">Sign Up</button>
+        </form>
+        <button onclick="closeSignUpForm()">Cancel</button>
+    </section>
+
+            <div id="searchContainer">
+                <input type="text" id="searchInput" placeholder="Cari artikel atau topik..." onkeyup="searchContent()">
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content Section -->
+    <section id="artikel-thread">
+        <h2>Artikel atau Thread Diskusi Seru</h2>
+        <div class="artikel">
+            <h3>Teknologi Komunikasi : Bagaimana AI di Balik Google Translate Bekerja?</h3>
+            <p>Google Translate telah menjadi alat yang sangat berguna dalam mengatasi hambatan bahasa, tetapi bagaimana sebenarnya teknologi di baliknya bekerja? Kunci utama dari Google Translate adalah penggunaan kecerdasan buatan (AI) dan pembelajaran mesin (machine learning). Dengan memanfaatkan algoritma canggih, Google Translate dapat memahami dan menerjemahkan bahasa dari satu ke bahasa lainnya dengan akurasi yang terus meningkat. Proses ini tidak hanya melibatkan aturan tata bahasa, tetapi juga konteks dari kalimat yang diterjemahkan, berkat kecerdasan buatan yang terus belajar dari data terjemahan yang besar.
+Teknologi yang digunakan oleh Google Translate melibatkan model pembelajaran mendalam atau deep learning, yang melatih sistem untuk mengenali pola dalam bahasa manusia. Secara khusus, Google Translate menggunakan Neural Machine Translation (NMT), yang memungkinkan sistem untuk menerjemahkan teks secara lebih alami dan lebih tepat, bahkan dalam kalimat panjang sekalipun. Sistem ini bekerja dengan "mempelajari" cara-cara terbaik untuk menghubungkan kata dan frasa antarbahasa, dengan semakin banyak data yang diproses, semakin akurat terjemahannya. Inilah yang membuat Google Translate lebih pintar dan efektif seiring waktu.</p>
+        </div>
+        <div class="artikel">
+            <h3>Teknologi Transportasi : Mobil Terbang, Mitos atau Realita Dekat?</h3>
+            <p>Mobil terbang sering kali dianggap sebagai sesuatu yang hanya ada dalam fiksi ilmiah, namun dalam beberapa tahun terakhir, perkembangan teknologi transportasi telah membuat konsep ini semakin dekat dengan kenyataan. Berbagai perusahaan teknologi dan otomotif di seluruh dunia sedang bekerja keras untuk menciptakan mobil terbang yang bisa mengatasi kemacetan lalu lintas dan menyediakan solusi transportasi yang lebih efisien di masa depan. Dengan kemajuan dalam teknologi drone, tenaga listrik, dan sistem navigasi, mobil terbang kini bukan lagi hanya impian, tetapi menjadi proyek yang semakin mungkin untuk diwujudkan dalam waktu dekat.
+Namun, meskipun teknologi mobil terbang terus berkembang, tantangan besar masih ada. Masalah seperti regulasi penerbangan, keselamatan, dan infrastruktur yang diperlukan untuk mendukung mobil terbang adalah beberapa hal yang perlu diatasi sebelum mobil terbang bisa menjadi bagian dari kehidupan sehari-hari. Meskipun beberapa prototipe sudah berhasil diuji, masih diperlukan banyak penelitian dan pengembangan sebelum mobil terbang dapat diproduksi massal dan digunakan oleh masyarakat. Jadi, meskipun mobil terbang semakin mendekati realita, masih ada beberapa tahun lagi sebelum kita bisa melihatnya mengudara di langit kota.</p>
+        </div>
+        <div class="artikel">
+            <h3>Teknologi Energi : Charging Nirkabel, Masa Depan Smartphone.</h3>
+            <p>Teknologi charging nirkabel atau pengisian daya tanpa kabel telah menjadi tren yang semakin berkembang di dunia smartphone. Dengan menggunakan teknologi seperti Qi dan AirFuel, smartphone kini dapat diisi daya hanya dengan meletakkannya di atas permukaan pengisi daya nirkabel. Keuntungan utama dari teknologi ini adalah kenyamanan dan kebebasan dari kabel yang sering kali merepotkan. Charging nirkabel memungkinkan pengguna untuk mengisi daya perangkat mereka tanpa harus mencolokkan kabel ke port, memberikan pengalaman yang lebih praktis dan rapi. Seiring dengan meningkatnya penggunaan teknologi ini, beberapa pabrikan smartphone bahkan mulai mengintegrasikan sistem pengisian nirkabel ke dalam desain mereka, menjadikannya fitur yang semakin umum.
+Namun, meskipun charging nirkabel menawarkan kemudahan, ada beberapa tantangan yang harus diatasi sebelum teknologi ini sepenuhnya menggantikan pengisian kabel tradisional. Proses pengisian daya nirkabel cenderung lebih lambat dibandingkan pengisian kabel, meskipun perkembangan terbaru menunjukkan peningkatan kecepatan yang signifikan. Selain itu, efisiensi energi dan kompatibilitas antar perangkat juga menjadi perhatian yang terus diperbaiki. Meskipun demikian, charging nirkabel diprediksi akan menjadi bagian penting dari masa depan smartphone, terutama dengan adanya pengembangan lebih lanjut dalam teknologi seperti pengisian daya jarak jauh, yang memungkinkan perangkat untuk mengisi daya tanpa harus menyentuh permukaan pengisi daya.</p>
+        </div>
+    </section>
+
+    <div class="artikel">
+        <h3>Teknologi Blockchain: Lebih dari Sekadar Bitcoin</h3>
+        <p>Blockchain dikenal luas sebagai teknologi di balik cryptocurrency seperti Bitcoin, namun potensi penggunaannya jauh lebih luas dari itu. Blockchain adalah sistem pencatatan data secara terdesentralisasi yang aman, transparan, dan sulit untuk dimanipulasi. Selain untuk mata uang digital, teknologi ini dapat digunakan dalam berbagai sektor, mulai dari logistik, pemerintahan, hingga industri keuangan. Misalnya, dalam sektor perbankan, blockchain dapat meningkatkan efisiensi transaksi dan mengurangi biaya yang terkait dengan proses perantara.
+         Dengan kemampuannya untuk menyediakan keamanan dan transparansi, blockchain memiliki potensi untuk merubah cara kita berbisnis dan berinteraksi dalam dunia digital.</p>
+    </div>
+</section>
+
+<div class="artikel">
+    <h3> Internet of Things (IoT): Menghubungkan Dunia Fisik dengan Dunia Digital</h3>
+    <p>Internet of Things (IoT) adalah konsep di mana perangkat fisik seperti perangkat rumah tangga, mobil, hingga alat kesehatan terhubung ke internet untuk saling berkomunikasi dan berbagi data. Dalam beberapa tahun terakhir, IoT telah merevolusi cara kita berinteraksi dengan perangkat di sekitar kita. Contoh sederhananya adalah smart home, di mana kita bisa mengontrol lampu, termostat, dan keamanan rumah melalui smartphone. IoT juga membantu memantau kesehatan dengan perangkat seperti smartwatch yang melacak detak jantung dan aktivitas fisik. Dengan IoT, berbagai sektor seperti pertanian, transportasi, dan kesehatan dapat memperoleh efisiensi yang lebih baik.
+     Namun, dengan semakin banyaknya perangkat yang terhubung, tantangan keamanan dan privasi menjadi isu yang perlu segera diatasi.</p>
+</div>
+
+<div class="artikel">
+    <h3>Teknologi Kecerdasan Buatan: Bagaimana AI Mengubah Dunia Kita?</h3>
+    <p>Kecerdasan Buatan (AI) telah mengubah banyak aspek kehidupan manusia, dari cara kita bekerja hingga cara kita berinteraksi dengan teknologi. AI memungkinkan mesin untuk belajar dari data dan membuat keputusan tanpa campur tangan manusia. Di dunia teknologi, AI digunakan untuk berbagai hal, 
+    mulai dari asisten virtual seperti Siri dan Alexa hingga mobil otonom yang dapat mengemudi sendiri. Salah satu contoh penerapan AI yang paling terkenal adalah dalam layanan rekomendasi, seperti yang kita lihat di Netflix atau YouTube, yang menganalisis preferensi pengguna untuk menawarkan konten yang relevan. Dengan kemajuan teknologi ini, AI semakin menjadi bagian integral dari kehidupan kita, dan potensi untuk masa depan terasa sangat besar.</p>
+</div>
+
+</section>
+
+    <section id="forum-sharing">
+        <h2>Forum Sharing Ide & Proyek Teknologi</h2>
+        <div class="forum">
+            <h3>Ide Proyek Arduino untuk Pemula</h3>
+            <p>Ingin memulai petualangan dengan Arduino? Kami telah mengumpulkan beberapa ide proyek sederhana yang akan membantu Anda belajar dasar-dasar Arduino sambil membuat sesuatu yang menyenangkan! Arduino adalah alat yang hebat untuk mempelajari dasar-dasar pemrograman dan elektronika. Anda bisa memulai dengan proyek kecil yang mudah diikuti, seperti membuat lampu LED berkedip, atau membuat sistem pengukur suhu digital menggunakan sensor suhu. Dengan komponen dasar yang mudah ditemukan, Anda bisa membuat berbagai proyek seru yang akan memberi pengalaman langsung dalam pemrograman dan elektronika.
+Bagi pemula yang baru mengenal Arduino, memulai dengan proyek kecil adalah cara yang tepat. Beberapa ide proyek menarik untuk dicoba termasuk membuat sensor gerak dengan menggunakan sensor PIR, atau membangun jam digital dengan menggunakan layar 7-segment. Selain itu, Anda juga bisa membuat proyek seperti kendali motor DC atau alat pendeteksi suara menggunakan sensor suara. Setiap proyek ini memberikan kesempatan untuk belajar lebih banyak tentang cara kerja Arduino, serta membuka pintu untuk menciptakan proyek-proyek yang lebih canggih di masa depan!</p>
+        </div>
+        <div class="forum">
+            <h3>Bangun Website Portfolio Tanpa Coding: Tips dan Tools</h3>
+            <p>Pernahkah Anda berpikir untuk membuat website portfolio pribadi, namun tidak memiliki keterampilan coding? Jangan khawatir, Anda tidak perlu menjadi ahli dalam pemrograman untuk memiliki website yang tampak profesional. Ada banyak tools dan platform yang memungkinkan Anda membangun website portfolio hanya dengan drag-and-drop, tanpa menulis satu baris kode pun. Dengan platform seperti Wix, Squarespace, dan Webflow, Anda bisa memilih template yang sesuai dengan kebutuhan dan mulai menambahkan proyek-proyek yang telah Anda kerjakan. Keuntungannya adalah, proses ini cepat dan mudah, memungkinkan Anda fokus pada tampilan dan isi konten daripada kode teknis.
+ Selain itu, banyak platform ini juga menawarkan berbagai fitur tambahan seperti integrasi media sosial, analitik, dan alat SEO yang memungkinkan Anda memaksimalkan jangkauan situs portfolio Anda.
+ Di forum ini, mari kita berbagi pengalaman dalam menggunakan tools tersebut, serta berdiskusi tentang tips dan trik untuk memaksimalkan website portfolio Anda agar terlihat menonjol di dunia digital. Jika Anda sudah memiliki website portfolio atau proyek lainnya, jangan ragu untuk membagikannya dan mendapatkan feedback dari anggota komunitas.</p>
+        </div>
+
+        <div class="forum">
+            <h3>Membuat Aplikasi Web Sederhana dengan JavaScript dan API</h3>
+            <p>Salah satu cara terbaik untuk memperdalam pemahaman Anda tentang JavaScript adalah dengan membangun aplikasi web sederhana yang mengintegrasikan API (Application Programming Interface). Sebagai contoh, Anda bisa membuat aplikasi cuaca yang mengambil data dari API cuaca dan menampilkan informasi cuaca terkini berdasarkan lokasi pengguna. Anda juga bisa mencoba untuk membuat aplikasi daftar tugas (todo list) yang dapat menyimpan data menggunakan API lokal atau bahkan aplikasi pencari film yang mengambil data film dari API seperti The Movie Database (TMDb).
+Membangun aplikasi berbasis API memungkinkan Anda untuk memahami konsep pengambilan data dari server, pemrosesan data menggunakan JavaScript, serta menampilkan informasi secara dinamis di halaman web. Mari berbagi proyek dan tantangan yang Anda hadapi saat bekerja dengan API dan membangun aplikasi berbasis web.</p>
+        </div>
+
+        <div class="forum">
+            <h3> Pengenalan React.js: Membuat Aplikasi Web Interaktif</h3>
+            <p>React.js adalah pustaka JavaScript yang digunakan untuk membangun antarmuka pengguna (UI) yang dinamis dan interaktif.
+                 Di forum ini, kami akan membahas bagaimana Anda bisa mulai menggunakan React untuk membuat aplikasi web. Sebagai pemula, Anda bisa mencoba membangun aplikasi penghitung (counter) atau aplikasi pencari gambar yang mengakses API eksternal seperti Unsplash. React memungkinkan Anda untuk membuat komponen UI yang dapat digunakan kembali, yang sangat berguna saat membuat aplikasi web yang besar dan kompleks.
+Mari berdiskusi tentang tantangan dan pengalaman Anda saat bekerja dengan React. Bagaimana cara mengelola state dalam aplikasi React? Apa saja best practices dalam membangun aplikasi React yang efisien? Bagikan pengalaman dan pertanyaan Anda di sini untuk membantu pengembang web lain yang sedang belajar.</p>
+        </div>
+
+        <div class="forum">
+            <h3> Penggunaan Framework CSS: Bootstrap vs Tailwind CSS</h3>
+            <p>Saat membangun website atau aplikasi web, penggunaan framework CSS seperti Bootstrap atau Tailwind CSS bisa sangat membantu dalam mempercepat proses pengembangan.
+                 Bootstrap memberikan komponen siap pakai yang memudahkan dalam membuat layout dan elemen-elemen UI seperti tombol, navigasi, dan form, sementara Tailwind CSS menawarkan kontrol lebih besar terhadap desain dengan pendekatan utility-first yang lebih fleksibel.
+Di forum ini, mari berdiskusi tentang perbandingan kedua framework tersebut dan pengalaman pribadi dalam menggunakan keduanya. Kapan sebaiknya menggunakan Bootstrap, dan kapan lebih baik menggunakan Tailwind CSS untuk proyek web Anda? Bagikan tips dan trik untuk memaksimalkan penggunaan framework ini dalam proyek Anda.</p>
+
+        </div>
+
+    </section>
+
+    <section id="teknologi-populer">
+        <h2>Teknologi Populer & Viral</h2>
+        <div class="viral">
+            <h3>Gadget Teknologi yang Viral di TikTok 2024</h3>
+            <p>TikTok telah menjadi platform di mana berbagai gadget teknologi terbaru sering kali menjadi viral. 
+                Di tahun 2024, beberapa gadget menarik yang tengah populer di TikTok mencakup perangkat wearable seperti smartwatch terbaru yang bisa memonitor kesehatan secara lebih akurat, earbuds nirkabel dengan kualitas suara terbaik, serta drone mini yang mudah digunakan untuk pemula. Tak hanya itu, beberapa gadget teknologi rumah pintar seperti lampu LED yang bisa dikendalikan dengan suara atau robot pembersih otomatis juga mendapat perhatian besar di platform ini.
+Para kreator di TikTok sering kali memberikan review singkat atau demonstrasi produk yang membuat para pengikutnya terkesan dengan fungsionalitas dan desainnya. Jangan lewatkan gadget-gadget inovatif yang sedang menjadi tren di TikTok tahun ini dan bagaimana mereka dapat mengubah cara kita berinteraksi dengan teknologi sehari-hari.</p>
+        </div>
+        <div class="viral">
+            <h3>Perangkat Kesehatan Wearable yang Paling Trendy di 2024</h3>
+            <p>Dalam beberapa tahun terakhir, perangkat kesehatan wearable semakin populer, dan di tahun 2024, 
+                berbagai inovasi baru dalam teknologi wearable hadir dengan fitur canggih seperti pemantauan kesehatan jantung secara real-time, pengenalan tidur, hingga pelacakan kadar oksigen darah. Banyak influencer di media sosial, termasuk TikTok, yang memberikan review dan menunjukkan bagaimana perangkat seperti smartwatch dan fitness tracker ini dapat membantu mereka menjaga gaya hidup sehat.
+Bergabunglah dalam diskusi tentang perangkat wearable terbaru ini dan bagaimana mereka semakin mengubah cara kita menjaga kesehatan.</p>
+        </div>
+
+        <div class="viral">
+            <h3>Teknologi Kecerdasan Buatan yang Viral di Media Sosial</h3>
+            <p>Kecerdasan Buatan (AI) terus menjadi topik yang sedang tren di dunia teknologi. Pada tahun 2024, berbagai aplikasi dan platform berbasis AI telah menjadi viral di media sosial, seperti chatbots AI yang semakin pintar, aplikasi generatif AI yang bisa menciptakan seni dan musik, hingga AI dalam pembuatan video. Teknologi ini memicu banyak diskusi mengenai bagaimana AI akan mempengaruhi industri kreatif, pekerjaan, dan kehidupan sehari-hari.
+ Mari berbagi berita dan informasi tentang bagaimana AI sedang merubah dunia dan apakah teknologi ini benar-benar akan mengambil alih banyak pekerjaan manusia.</p>
+        </div>
+
+        <div class="viral">
+            <h3>Perkembangan Teknologi 5G dan Apa yang Akan Datang di 2024</h3>
+            <p>Teknologi 5G adalah topik hangat yang terus berkembang. Di tahun 2024, banyak negara dan perusahaan teknologi besar telah mulai mengimplementasikan jaringan 5G yang lebih luas, yang menjanjikan kecepatan internet yang jauh lebih tinggi dan konektivitas yang lebih stabil. Dengan adanya 5G, berbagai inovasi baru akan muncul, termasuk mobil otonom, realitas virtual, dan perangkat IoT (Internet of Things) yang dapat berfungsi lebih efisien.
+Di sini, kita akan membahas perkembangan terbaru tentang 5G, aplikasi potensialnya, dan dampaknya terhadap kehidupan sehari-hari serta industri global.</p>
+        </div>
+
+        <div class="viral">
+            <h3>Fitur Canggih Smartphone yang Membuat Kita Terkagum-kagum</h3>
+            <p>Smartphone 2024 tidak hanya sekedar alat untuk berkomunikasi, tetapi juga perangkat dengan berbagai fitur canggih yang benar-benar mengubah cara kita berinteraksi dengan dunia. Salah satu fitur yang sedang viral adalah kamera ponsel dengan AI built-in yang memungkinkan pengambilan foto dan video seperti seorang profesional, meskipun Anda bukan seorang fotografer. Ada juga layar ponsel lipat yang kini semakin tipis dan kuat, memungkinkan pengalaman menonton video dan bermain game yang lebih imersif.
+Tak hanya itu, fitur pengecasan nirkabel ultra-cepat yang bisa mengisi daya ponsel Anda hingga 50% hanya dalam waktu 15 menit juga telah menjadi viral. Ini adalah tren yang menjanjikan kenyamanan lebih bagi pengguna yang super sibuk. Bagaimana menurut Anda, apakah fitur-fitur canggih ini akan menjadi standar pada semua smartphone di masa depan?</p>
+        </div>
+    </section>
+
+   <!-- Admin Panel -->
+<section id="admin-panel">
+    <h2>Dashboard Admin</h2>
+    <p>Kelola dan kontrol seluruh postingan komunitas dengan mudah. Pilih salah satu tindakan di bawah ini untuk mengelola konten.</p>
+
+    <div class="admin-actions">
+        <!-- Create Post -->
+        <div class="action-card">
+            <h3>Buat Post Baru</h3>
+            <p>Ingin berbagi artikel baru? Klik tombol di bawah untuk membuat post yang menarik untuk komunitas!</p>
+            <button class="action-btn" onclick="createPost()">Buat Post</button>
+        </div>
+
+        <!-- Manage Post -->
+        <div class="action-card">
+            <h3>Kelola Postingan</h3>
+            <p>Ubah atau hapus postingan yang sudah ada di situs. Pastikan semua konten up-to-date dan relevan!</p>
+            <button class="action-btn" onclick="editPost()">Edit Post</button>
+            <button class="action-btn" onclick="deletePost()">Hapus Post</button>
+        </div>
+    </div>
+</section>
+
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Komunitas Teknologi.</p>
+    </footer>
+
+    
+    <!-- Scripts -->
+    <script>
+        function showLoginForm() {
+            document.getElementById('loginForm').style.display = 'block';
+        }
+
+        function showSignUpForm() {
+            document.getElementById('signUpForm').style.display = 'block';
+        }
+
+        function closeLoginForm() {
+            document.getElementById('loginForm').style.display = 'none';
+        }
+
+        function closeSignUpForm() {
+            document.getElementById('signUpForm').style.display = 'none';
+        }
+
+        function createPost() {
+            alert("Post Baru Dibuat");
+        }
+
+        function editPost() {
+            alert("Post Diedit");
+        }
+
+        function deletePost() {
+            alert("Post Dihapus");
+        }
+
+        // Dark Mode Toggle Functionality
+        function toggleTheme() {
+            const body = document.body;
+            const button = document.querySelector('#theme-toggle button');
+            body.classList.toggle('dark-mode');
+            
+            if (body.classList.contains('dark-mode')) {
+                button.textContent = "Switch to Light Mode";
+            } else {
+                button.textContent = "Switch to Dark Mode";
+            }
+        }
+
+        // Carousel Functionality
+        let index = 0;
+
+        function showNextSlide() {
+            const slides = document.querySelectorAll('.carousel-slide');
+            index = (index + 1) % slides.length;
+            document.querySelector('.carousel-container').style.transform = `translateX(-${index * 100}%)`;
+        }
+
+        setInterval(showNextSlide, 3000);  // Change image every 3 seconds
+
+        // Search Content Functionality (for demonstration)
+        function searchContent() {
+            const searchQuery = document.getElementById("searchInput").value.toLowerCase();
+            const articles = document.querySelectorAll(".artikel, .forum, .viral");
+            articles.forEach(article => {
+                const title = article.querySelector("h3").textContent.toLowerCase();
+                const content = article.querySelector("p").textContent.toLowerCase();
+                if (title.includes(searchQuery) || content.includes(searchQuery)) {
+                    article.style.display = 'block';
+                } else {
+                    article.style.display = 'none';
+                }
+            });
+        }
+    </script>
+</body>
+</html>
